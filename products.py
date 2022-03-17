@@ -24,7 +24,7 @@ def print_products(products):
 	for p in prducts:
 		print(p[0], '的價格是', p[1])
 def write_file(filename, products):
-	with open(flename, 'w', encoding='utf-8') as f:
+	with open(filename, 'w', encoding='utf-8') as f:
 		f.write('商品,價格\n')
 		for p in products:
 			f.write(p[0] + ','+str(p[1]) + "\n")
